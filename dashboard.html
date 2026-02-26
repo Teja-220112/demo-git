@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fc;
+            margin: 0;
+        }
+
+        .navbar {
+            background: #4e73df;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #e74a3b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div>My Dashboard</div>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div class="content">
+    <h2 id="welcomeText"></h2>
+    <p>This is your dashboard page.</p>
+</div>
+
+<script>
+    // Check login
+    var user = localStorage.getItem("loggedInUser");
+
+    if(!user) {
+        window.location.href = "login.html";
+    } else {
+        document.getElementById("welcomeText").innerText = "Welcome, " + user + "!";
+    }
+
+    function logout() {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>
