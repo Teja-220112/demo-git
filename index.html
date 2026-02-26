@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skill Bridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="brand">Skill Bridge</div>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Learning</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <!-- ADDED UPLOAD LINK -->
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- INTRO -->
+<section class="intro">
+    <h1>Build Skills. Build Careers.</h1>
+    <p>
+        Skill Bridge is a simple online learning platform prototype that
+        demonstrates video-based learning and student progress tracking.
+    </p>
+    <button id="exploreBtn">Explore Courses</button>
+</section>
+
+<!-- COURSES -->
+<section class="courses">
+    <h2>Available Courses</h2>
+
+    <div class="course-container">
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS and JavaScript fundamentals.</p>
+            <span>Beginner</span>
+        </div>
+
+        <div class="course-card">
+            <h3>Python Programming</h3>
+            <p>Core programming concepts using Python.</p>
+            <span>Intermediate</span>
+        </div>
+
+        <div class="course-card">
+            <h3>Database Basics</h3>
+            <p>Introduction to SQL and databases.</p>
+            <span>Beginner</span>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO LEARNING -->
+<section class="videos">
+    <h2>Video Lessons</h2>
+
+    <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/HD13eq_Pmp8" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+    <h2>Learning Overview</h2>
+
+    <div class="status-box">
+        <p><strong>Enrolled Courses:</strong> <span id="enrolledCount">0</span></p>
+        <p><strong>Completed Courses:</strong> <span id="completedCount">0</span></p>
+        <p><strong>Ongoing Courses:</strong> <span id="ongoingCount">0</span></p>
+    </div>
+
+    <button id="completeBtn">Mark One Course as Completed</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Skill Bridge | Academic Project
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
